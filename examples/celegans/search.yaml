@@ -1,0 +1,17 @@
+Search:
+  precursor_ppm: 10.0
+  decoy_prefix: DECOY_
+  fdr: 1.0
+  batch_size: 64
+  spectra_per_batch: 8
+  prefix_cache_size: 100000
+  amp: false
+  top_k: 10
+  flush_every: 100
+  min_score: 0.0
+  max_variable_mods: 2
+  min_pep_len: 7
+  max_pep_len: 32
+Mods:
+  fixed: C:+57.021
+  variable: M:+15.995

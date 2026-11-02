@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.ckpt binary
+
+# Preserve the real source excerpts byte-for-byte across platforms.
+examples/celegans/spectra.mgf -text
+examples/celegans/peptides.fasta -text
+examples/celegans/expected_best.tsv -text

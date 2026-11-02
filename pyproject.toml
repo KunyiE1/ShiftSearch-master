@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shiftsearch"
+version = "1.0.0"
+description = "Lightweight cleavage-based peptide-spectrum match scoring and database search"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {file = "LICENSE"}
+dependencies = [
+    "torch>=2.4,<2.6",
+    "lightning==2.5.0",
+    "pytorch-lightning==2.5.0",
+    "torchmetrics==1.9.0",
+    "lightning-utilities==0.15.3",
+    "lmdb==2.2.0",
+    "numpy==1.26.4",
+    "pandas==2.3.3",
+    "pyteomics==4.7.5",
+    "PyYAML>=6.0.2,<7",
+    "tqdm>=4.67.1,<5",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+]
+
+[project.scripts]
+shiftsearch-search = "ShiftSearch.cli.search:main"
+shiftsearch-train = "ShiftSearch.cli.train:main"
+shiftsearch-fdr = "ShiftSearch.cli.fdr:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ShiftSearch", "ShiftSearch.*"]
+exclude = ["tests", "tests.*"]

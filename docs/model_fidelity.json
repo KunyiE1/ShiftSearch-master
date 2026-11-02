@@ -1,0 +1,108 @@
+{
+  "software": "ShiftSearch",
+  "scope": "Preserved model, training and search runtime modules. Only comments are renamed in two modules; their algorithm ASTs are unchanged.",
+  "modules": [
+    {
+      "path": "ShiftSearch/__init__.py",
+      "sha256": "7a58dd5655502bd35e341c167446388f1b0b786ac770659d7aa8971ab09de7c7",
+      "original_sha256": "7a58dd5655502bd35e341c167446388f1b0b786ac770659d7aa8971ab09de7c7",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/constants.py",
+      "sha256": "c070b7b2c15be49f91ebfb99c8f376e66bef899bcb9fbd525caee8c8a3bf2ce7",
+      "original_sha256": "c070b7b2c15be49f91ebfb99c8f376e66bef899bcb9fbd525caee8c8a3bf2ce7",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/__init__.py",
+      "sha256": "122c0a669c1dcff8c13dd6adb6bd21db9bdacea1411bd3dce6d213f5c8c144d3",
+      "original_sha256": "122c0a669c1dcff8c13dd6adb6bd21db9bdacea1411bd3dce6d213f5c8c144d3",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/cnn.py",
+      "sha256": "bf968def5d86cac1078fce09bbffab80c6f35f09e5d794c48ad98c0d46d145d3",
+      "original_sha256": "bf968def5d86cac1078fce09bbffab80c6f35f09e5d794c48ad98c0d46d145d3",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/dataset.py",
+      "sha256": "c40cb5120a9921a7a95f722d811da40a6508d18332f0754b17d16151ca17b0cf",
+      "original_sha256": "c40cb5120a9921a7a95f722d811da40a6508d18332f0754b17d16151ca17b0cf",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/hierarchical_by.py",
+      "sha256": "fd0d67dfc489c39de8579230a01606ed14f502f712650b5b5e0e17479b6407c8",
+      "original_sha256": "0824fbb429d45582502ece24080c4ca9aadebeed12ca532ede299e54922a2540",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/hierarchical_by_module.py",
+      "sha256": "017a4555fb4362c188f374ffb3603508c81953cc2911f3c9986ee772c6085386",
+      "original_sha256": "5dcfe9b1aeb35ac02ae98324fd31d897214be2778615b98d69b595c8b512d11a",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/loss.py",
+      "sha256": "1361f0a99b7b4a5d0b96089cdbe864f74d4e48e70c774fee7400653edcc331ce",
+      "original_sha256": "1361f0a99b7b4a5d0b96089cdbe864f74d4e48e70c774fee7400653edcc331ce",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/module.py",
+      "sha256": "5ced5412d6c240cd4d55b0630e61ee10936745f227c540316edd268d402b668f",
+      "original_sha256": "5ced5412d6c240cd4d55b0630e61ee10936745f227c540316edd268d402b668f",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/psm/runner.py",
+      "sha256": "13e9212b6d191f34a3ea25b5fa6b6796b16d7c84346f7749fc890cc5fd7ff863",
+      "original_sha256": "13e9212b6d191f34a3ea25b5fa6b6796b16d7c84346f7749fc890cc5fd7ff863",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/search/__init__.py",
+      "sha256": "84924bed2db6c8234435573fb70dc900d35c201d49d841c2b9909f268ef287fe",
+      "original_sha256": "84924bed2db6c8234435573fb70dc900d35c201d49d841c2b9909f268ef287fe",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/search/database.py",
+      "sha256": "16990f5cb73f69b511c5b047b1b4d24e21a63aa5528bfb6f67b226edcf95343d",
+      "original_sha256": "16990f5cb73f69b511c5b047b1b4d24e21a63aa5528bfb6f67b226edcf95343d",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/search/fdr.py",
+      "sha256": "f7dbd8acb34c08278f8b64e7080c3418ee6c6796ccb3ef6f4bf34367e0ad733f",
+      "original_sha256": "f7dbd8acb34c08278f8b64e7080c3418ee6c6796ccb3ef6f4bf34367e0ad733f",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/search/hierarchical_by_search.py",
+      "sha256": "e61970c57c1435e71e9fceafd89e58e499f48af2fe2a595f2242c7fa41a9086a",
+      "original_sha256": "e61970c57c1435e71e9fceafd89e58e499f48af2fe2a595f2242c7fa41a9086a",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/search/peptide_utils.py",
+      "sha256": "4fb21aa8fc71235bc82b9ba8ccaed2a635a951313109317ebed65c3dbca46532",
+      "original_sha256": "4fb21aa8fc71235bc82b9ba8ccaed2a635a951313109317ebed65c3dbca46532",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/search/result_io.py",
+      "sha256": "21581081a0abb0d5228176b206acd4654fc87bbfa06ea49095170b93f2b07b4a",
+      "original_sha256": "21581081a0abb0d5228176b206acd4654fc87bbfa06ea49095170b93f2b07b4a",
+      "algorithm_ast_identical": true
+    },
+    {
+      "path": "ShiftSearch/search/spectrum_io.py",
+      "sha256": "a118f89652c312877d7169d2e597ca274b206c9941e41bec0d6378fe65b9547f",
+      "original_sha256": "a118f89652c312877d7169d2e597ca274b206c9941e41bec0d6378fe65b9547f",
+      "algorithm_ast_identical": true
+    }
+  ]
+}

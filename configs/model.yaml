@@ -1,0 +1,62 @@
+# Model/Meta and training settings match the paper checkpoint hyperparameters.
+# Checkpoint: best-epoch=15-step=46880-val_acc=0.970270.ckpt.
+# Maximum epochs=50; early stopping may end training before 50 epochs.
+# n_workers=40 is the recorded cloud run. Override --n-workers for local hardware;
+# that is a convenience change rather than the recorded paper configuration.
+task: psm_hierarchical_by
+
+Meta:
+  max_charge: 6
+  start_mz: 0.0
+  max_mz: 6000.0
+  max_npeaks: 256
+  cpu_pre_topk: 512
+  min_npeaks: 10
+  max_pep_len: 32
+  min_pep_len: 6
+  fragment_tolerance_ppm: 20.0
+
+Model:
+  params:
+    cell_hidden_dim: 16
+    cell_embedding_dim: 16
+    cleavage_channels: [32, 64]
+    kernel_size: 3
+    head_hidden_dim: 32
+    dropout: 0.2
+
+Train:
+  batch_size: 1024
+  n_workers: 40
+  accumulate_grad_batches: 1
+  n_epochs: 50
+  lr: 0.00035
+  cache_path: null
+  rebuild_cache: false
+  epoch_samples: 3000000
+  val_samples: 100000
+  warmup_steps: null
+  warmup_epochs: 1
+  min_lr_ratio: 0.01
+  log_interval: 10
+  checkpoint_dir: checkpoints_shiftsearch
+  save_every_n_steps: 500
+  keep_step_checkpoints: 5
+  keep_best_checkpoints: 3
+  accelerator: auto
+  devices: "1"
+  strategy: auto
+  precision: 16-mixed
+  resume_from_checkpoint: null
+  early_stopping: true
+  early_stopping_patience: 5
+  early_stopping_min_delta: 0.0
+  seed: 42
+  deterministic: false
+  local_logger: csv
+  project_name: ShiftSearch
+  run_name: ShiftSearch
+  wandb: false
+  wandb_project: ShiftSearch
+  wandb_run_name: ShiftSearch
+  wandb_run_id: null

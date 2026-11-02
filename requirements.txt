@@ -1,0 +1,12 @@
+# Recorded local validation runtime; install the appropriate CPU/CUDA torch wheel first.
+torch==2.4.0
+lightning==2.5.0
+pytorch-lightning==2.5.0
+torchmetrics==1.9.0
+lightning-utilities==0.15.3
+lmdb==2.2.0
+numpy==1.26.4
+pandas==2.3.3
+pyteomics==4.7.5
+PyYAML==6.0.3
+tqdm==4.67.3

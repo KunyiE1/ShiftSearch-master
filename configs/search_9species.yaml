@@ -1,0 +1,20 @@
+# Nine-species accuracy benchmark: up to three variable methionine oxidations.
+# fdr=1 preserves all top-1 assignments, as required for exact-match accuracy.
+Search:
+  precursor_ppm: 10.0
+  decoy_prefix: DECOY_
+  fdr: 1
+  batch_size: 1024
+  spectra_per_batch: 32
+  prefix_cache_size: 100000
+  amp: false
+  top_k: 10
+  flush_every: 1000
+  min_score: 0.0
+  max_variable_mods: 3
+  min_pep_len: 7
+  max_pep_len: 32
+
+Mods:
+  fixed: "C:+57.021"
+  variable: "M:+15.995"

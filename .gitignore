@@ -1,0 +1,52 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.venv/
+venv/
+env/
+build/
+dist/
+
+# Local inputs, generated caches, training runs and search outputs
+data/
+outputs/
+results/
+demo_work/
+lightning_logs/
+wandb/
+logs/
+checkpoints*/
+*.mgf
+*.mzML
+*.mzXML
+*.raw
+*.lmdb
+*.lmdb-lock
+*.fasta
+*.fa
+*.tsv
+*.csv
+*.npy
+*.npz
+*.partial*
+*.ckpt
+!weights/shiftsearch.ckpt
+
+# Deliberately bundled real-data example (not full experimental datasets).
+!examples/celegans/spectra.mgf
+!examples/celegans/peptides.fasta
+!examples/celegans/expected_best.tsv
+
+# Secrets and editor files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

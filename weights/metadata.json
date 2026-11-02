@@ -1,0 +1,14 @@
+{
+  "model": "ShiftSearch",
+  "scope": "inference_only",
+  "parameters": 11825,
+  "source_checkpoint_name": "best-epoch=15-step=46880-val_acc=0.970270.ckpt",
+  "source_checkpoint_sha256": "b4796308d5a90ea89d54343ff4c25b70179791bbf226c6702e49a47fc2f59dfb",
+  "source_epoch_zero_indexed": 15,
+  "source_global_step": 46880,
+  "export_file": "shiftsearch.ckpt",
+  "export_bytes": 51568,
+  "export_sha256": "d61801f351a4cd6cacd6dfc47305a78fb0eaadda31b498def41c92d066f85a40",
+  "model_tensor_sha256": "ebdd642fb5a15b26b64a809a6139518282557527d6e0599ff0e384888b758451",
+  "all_source_model_tensors_identical": true
+}
